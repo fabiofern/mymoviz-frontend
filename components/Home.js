@@ -38,7 +38,7 @@ function Home() {
     const [moviesData, setMoviesData] = useState([]);
     console.log("sous l'etat", moviesData);
     useEffect(() => {
-        fetch("http://localhost:3000/movies")
+        fetch("https://mymoviz-backend-two-psi.vercel.app/movies")
             .then((response) => response.json())
             .then((data) => {
                 let newTab = [];
